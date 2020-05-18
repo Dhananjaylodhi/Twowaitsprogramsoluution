@@ -1,15 +1,18 @@
-a=[]
-b=[]
-res=[]
-c=int(input("Enter number of elements in dictionary: "))
-for i in range(c):
-    d=input("Enter element: ")
-    a.append(b)
-e=int(input("Enter number of elements in array: "))
-for i in range(e):
-    f=input("Enter element: ")
-    b.append(f)
-for word in a:
-    if set(word).issubset(set(b)):
-        res.append(word)
-print(res)
+n1=int(input("Enter the size of dictionary"))
+dict=[]
+print("Enter the words of the dictionary")
+for i in range(n1):
+  dict.append(input("enter the word"+str(i+1) + ": "))
+
+n2=int(input("Enter the size of character list"))
+arr=[]
+result=[]
+for i in range(n2):
+  arr.append(input())
+
+for word in dict:
+  if set(word).issubset(set(arr)):
+     result.append(word)
+ 
+print(", ".join(result)+".")
+  
