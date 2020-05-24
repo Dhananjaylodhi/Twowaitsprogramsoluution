@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# Requires PyAudio and PySpeech.
-
 import webbrowser as wb
 import speech_recognition as sr
 from tkinter import *
@@ -74,7 +71,7 @@ def recordAudio():
     elif "where is" in data:
         data = data.split(" ")
         location = data[2]
-        speak("Hold on nitesh, I will show you where " + location + " is.")
+        speak("Hold on Dhananjay, I will show you where " + location + " is.")
         wb.open_new_tab("https://www.google.nl/maps/place/" + location + "/&amp;")
     else :
         speak(",,,,,,,I did not get what you said !")
@@ -92,7 +89,7 @@ def jarvis(data):
     elif "where is" in data:
         data = data.split(" ")
         location = data[2]
-        speak("Hold on nitesh, I will show you where " + location + " is.")
+        speak("Hold on Dhananjay, I will show you where " + location + " is.")
         wb.open_new_tab("https://www.google.nl/maps/place/" + location + "/&amp;")
     else :
         speak(",,,,,,,I did not get what you said !")
@@ -122,10 +119,10 @@ root.mainloop()
 
 
 time.sleep(0.5)
-# x=0
-# print("start..")
-# speak("Hi! Nitesh, what can I do for you?")
-# data = recordAudio()
-# jarvis(data)
-# speak("Turning off the program.")
-# print("Run complete")
+
+print("start..")
+speak("Hi! Dhananjay, what can I do for you?")
+data = recordAudio()
+jarvis(data)
+speak("Turning off the program.")
+print("Run complete")
